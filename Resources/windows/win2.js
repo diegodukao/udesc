@@ -9,3 +9,8 @@ var label2 = Titanium.UI.createLabel({
 });
 
 win2.add(label2);
+
+label2.addEventListener("click", function(){
+	Ti.App.fireEvent("app:labelclicked", {newlabel: "funciona da outra tela! \\o/"})
+});
+
